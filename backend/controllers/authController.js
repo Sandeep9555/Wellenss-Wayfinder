@@ -1,7 +1,7 @@
 require('dotenv').config()
 const userMode = require("../models/userModel");
 const emailValidator = require("email-validator");
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken');
 
 
