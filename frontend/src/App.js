@@ -15,22 +15,24 @@ import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import DashBoard from "./Pages/DashBoard";
 import Logout from "./Pages/Logout";
+import BmiCalculator from "./Pages/BmiCalculator";
 
 function App() {
   return (
     <div className="App">
-      <Router basename="/wellness-wayfinder"> 
-      <Routes>
+      <Router basename="/wellness-wayfinder">
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Gym" element={<Gym />} />
-          <Route path="/medicine" element={<Medicine/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/reviews" element={<Reviews/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/logout" element={<Logout/>} />
-          <Route path="/signup" element={<SignUp/>} />
-          <Route path="/legal" element={<Legal/>} />
-          <Route path="/dashboard" element={<DashBoard/>} />
+          <Route path="/medicine" element={<Medicine />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/bmicalculator" element={<BmiCalculator />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/logout" element={<Logout />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/legal" element={<Legal />} />
+          <Route path="/dashboard" element={<DashBoard />} />
           <Route path="/appointment" element={<Appointment />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

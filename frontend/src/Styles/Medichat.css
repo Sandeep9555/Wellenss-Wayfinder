@@ -1,47 +1,80 @@
+/* Enhanced Chatbox Styling */
 .App {
   text-align: center;
   margin: 20px;
+  font-family: Arial, sans-serif;
 }
 
 .chatBox {
   border: 1px solid #ccc; /* Use a lighter border color */
-  border-radius: 8px; /* Add some border radius for rounded corners */
+  border-radius: 12px; /* Rounded corners for a softer look */
   min-height: 400px;
+  max-height: 500px;
   padding: 20px;
   background-color: #f9f9f9; /* Light gray background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
   overflow-y: auto; /* Enable vertical scroll if content exceeds box height */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.chatBox:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+  background-color: #f1f1f1; /* Lighter background when hovered */
 }
 
 .inputArea {
   margin-top: 20px;
   display: flex; /* Align input and button horizontally */
-  justify-content: center; /* Center align input and button */
-  align-items: center; /* Center align input and button vertically */
+  justify-content: center; /* Center-align input and button */
+  align-items: center; /* Center-align vertically */
   margin-bottom: 20px;
 }
 
 .inputArea input {
-  width: calc(100% - 100px); /* Adjust input width */
-  padding: 10px; /* Add padding for better spacing */
+  width: calc(100% - 110px); /* Adjust input width */
+  padding: 12px; /* Increase padding for better spacing */
+  font-size: 16px; /* Increase font size for better readability */
   border: 1px solid #ccc; /* Light border */
-  border-radius: 4px; /* Add border radius */
+  border-radius: 4px; /* Rounded corners */
   margin-right: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputArea input:focus {
+  border-color: #1A8EFD; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(26, 143, 253, 0.3); /* Glowing effect */
+  outline: none;
 }
 
 .inputArea button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background-color: #1A8EFD; /* Blue background color */
-  color: #fff; /* White text color */
-  border: none; /* Remove button border */
-  border-radius: 4px; /* Add border radius */
-  cursor: pointer; /* Add pointer cursor */
+  color: #fff; /* White text */
+  border: none; /* Remove border */
+  border-radius: 6px; /* Rounded button */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px; /* Slightly larger font for readability */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.inputArea button:hover {
+  background-color: #1069b4; /* Darker blue when hovering */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
 .newline-text {
-  white-space: pre-line;
-  overflow-wrap: break-word;
-  word-break: break-word;
+  white-space: pre-line; /* Preserve line breaks */
+  word-wrap: break-word; /* Break long words */
   margin-bottom: 20px;
-  color: #1A8EFD; /* Change text color to blue */
+  color: #1A8EFD; /* Blue text color */
+  font-size: 1.1rem; /* Slightly larger text for readability */
+}
+
+.newline-text span {
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.newline-text span:hover {
+  color: #0077cc; /* Change color on hover */
 }

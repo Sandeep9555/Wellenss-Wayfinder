@@ -1,0 +1,104 @@
+/* BmiCalculator.css */
+.container {
+    width: 100%;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-top: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #eef7f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .result h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .result p {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .result.underweight {
+    background-color: #ffb3b3;
+  }
+  
+  .result.normal {
+    background-color: #b3f0b3;
+  }
+  
+  .result.overweight {
+    background-color: #ffdb4d;
+  }
+  
+  .result.obese {
+    background-color: #ff6666;
+  }
+  

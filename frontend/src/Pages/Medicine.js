@@ -1,18 +1,18 @@
-import React from 'react'
-// import Doctors from '../Components/Doctors'
-import Footer from '../Components/Footer'
-import Chatbot from '../Components/Chabot'
-import Navbar from '../Components/Navbar'
-import MediChat from './Medichat'
+import React from "react";
+import Footer from "../Components/Footer";
+import Chatbot from "../Components/Chabot";
+import Navbar from "../Components/Navbar";
+import MediChat from "./Medichat";
 
 const Medicine = () => {
   return (
-    <div className='medcine-section'> 
-    <Navbar/>
-    <Chatbot/>
-    <MediChat/>
-    <Footer /></div>
-  )
-}
+    <div className="medcine-section">
+      <Navbar />
+      <Chatbot />
+      <MediChat />
+      <Footer />
+    </div>
+  );
+};
 
-export default Medicine
+export default Medicine;

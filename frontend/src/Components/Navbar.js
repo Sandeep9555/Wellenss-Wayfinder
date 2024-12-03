@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
-import Login from "../Pages/Login";
-import Logout from "../Pages/Logout";
 import { useAuth } from "../store/auth";
 
 function Navbar() {
@@ -36,7 +34,10 @@ function Navbar() {
           </Link>
         </li>
         <li>
-        <Link to="https://wellnesswayfinder-visuals.vercel.app/" className="navbar-links">
+          <Link
+            to="https://wellnesswayfinder-visuals.vercel.app/"
+            className="navbar-links"
+          >
             Visuals
           </Link>
         </li>
@@ -46,8 +47,8 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="https://wellness-wayfinder-12.streamlit.app/" className="navbar-links">
-            Diet
+          <Link to="/BmiCalCulator" className="navbar-links">
+            BmiCalCulator
           </Link>
         </li>
         <li>
@@ -67,24 +68,18 @@ function Navbar() {
         </li> */}
         {isLoggedIn ? (
           <li>
-            <button
-        className="navbar-btn"
-        type="button"
-      >
-        <Link to="/logout" className="navbar-links">
-              Logout
-            </Link>
-      </button>
+            <button className="navbar-btn" type="button">
+              <Link to="/logout" className="navbar-links">
+                Logout
+              </Link>
+            </button>
           </li>
         ) : (
           <li>
-            <button
-        className="navbar-btn"
-        type="button"
-      >
-            <Link to="/login" className="navbar-links">
-              Login
-            </Link>
+            <button className="navbar-btn" type="button">
+              <Link to="/login" className="navbar-links">
+                Login
+              </Link>
             </button>
           </li>
         )}
