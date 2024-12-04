@@ -1,84 +1,86 @@
-# Wellness Way Finder
 
-## Overview
+# Wellness Way Finder  
 
-**Wellness Way Finder** is an all-in-one wellness tracking application designed to guide users toward a healthier lifestyle. The app provides users with tools to monitor their fitness goals, track nutrition, and receive medical assistance through APIs. Whether you're aiming to maintain a balanced diet or access medical resources, Wellness Way Finder has you covered!
+**Wellness Way Finder** is an all-in-one wellness tracking application designed to guide users toward a healthier lifestyle. The app provides users with tools to monitor their fitness goals, calculate BMI, track nutrition, and receive medical assistance through APIs. Whether you're aiming to maintain a balanced diet or access medical resources, Wellness Way Finder has you covered!  
 
-## Features
+## Features  
+- **BMI Calculator**: Calculate Body Mass Index (BMI) to assess your health status based on height and weight.  
+- **Chart Generation**: Dynamic and interactive charts to track fitness progress.  
+- **Nutrition Tracker**: Provides nutrition charts based on user input and goals.  
+- **Medical Assistance**: Integrates with the Medicare API for real-time medical support.  
 
-- **Chart Generation**: Dynamic and interactive charts to track fitness progress.
-- **Nutrition Tracker**: Provides nutrition charts based on user input and goals.
-- **Medical Assistance**: Integrates with the Medicare API for real-time medical support.
+## Tech Stack  
+- **Frontend**: React.js  
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB  
+- **State Management**: Redux  
+- **External APIs**: Medicare API  
 
-## Tech Stack
+## Installation  
 
-- **Frontend**: React.js
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **State Management**: Redux
-- **External APIs**: Medicare API
+### Prerequisites  
+Ensure you have the following installed on your system:  
+- Node.js  
+- MongoDB  
 
-## Installation
+### Steps to Run Locally  
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/yourusername/wellness-wayfinder.git  
+   ```  
 
-### Prerequisites
-Navigate to the project directory:
+2. Navigate to the project directory:  
+   ```bash  
+   cd wellness-wayfinder  
+   ```  
 
-bash
-Copy code
-cd wellness-wayfinder
-Install dependencies:
+3. Install dependencies:  
+   ```bash  
+   npm install  
+   ```  
 
-bash
-Copy code
-npm install
-Set up environment variables:
+4. Set up environment variables:  
+   Create a `.env` file in the root directory with the following variables:  
+   ```env  
+   MONGO_URI=your_mongodb_uri  
+   PORT=5000  
+   MEDICARE_API_KEY=your_medicare_api_key  
+   ```  
 
-Create a .env file in the root directory with the following variables:
+5. Run the app:  
+   ```bash  
+   npm run dev  
+   ```  
 
-env
-Copy code
-MONGO_URI=your_mongodb_uri
-PORT=5000
-MEDICARE_API_KEY=your_medicare_api_key
-Run the app:
+6. Open your browser and navigate to:  
+   ```
+   http://localhost:5000  
+   ```  
 
-bash
-Copy code
-npm run dev
-Open your browser and navigate to http://localhost:5000.
+## Usage  
+- **BMI Calculator**: Enter height and weight to calculate and track your BMI.  
+- **Nutrition Tracker**: Input dietary preferences and goals to receive personalized nutrition charts.  
+- **Medical Assistance**: Access healthcare information and support through Medicare API integration.  
+- **Track Progress**: Visualize fitness data with interactive charts.  
 
-Usage
-Nutrition Tracker: Input your dietary preferences and goals to receive personalized nutrition charts.
-Medical Assistance: Get quick access to healthcare information through the Medicare API integration.
-Track Progress: Visualize your fitness data with easy-to-understand charts.
-Contributing
-We welcome contributions! To contribute to Wellness Way Finder, follow these steps:
+## Contributing  
+We welcome contributions! To contribute to **Wellness Way Finder**, follow these steps:  
+1. Fork the repository.  
+2. Create a new branch:  
+   ```bash  
+   git checkout -b feature-branch  
+   ```  
+3. Make your changes.  
+4. Commit your changes:  
+   ```bash  
+   git commit -m 'Add new feature'  
+   ```  
+5. Push to your branch:  
+   ```bash  
+   git push origin feature-branch  
+   ```  
+6. Open a pull request.  
 
-Fork the repository.
-Create a new branch:
-bash
-Copy code
-git checkout -b feature-branch
-Make your changes.
-Commit your changes:
-bash
-Copy code
-git commit -m 'Add new feature'
-Push to your branch:
-bash
-Copy code
-git push origin feature-branch
-Open a pull request.
-License
-This project is licensed under the MIT License.
+## License  
+This project is licensed under the MIT License.  
 
-Make sure you have the following installed on your system:
-
-- [Node.js](https://nodejs.org/)
-- [MongoDB](https://www.mongodb.com/)
-
-### Steps to Run Locally
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/wellness-wayfinder.git
