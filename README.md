@@ -3,6 +3,11 @@
 
 **Wellness Way Finder** is an all-in-one wellness tracking application designed to guide users toward a healthier lifestyle. The app provides users with tools to monitor their fitness goals, calculate BMI, track nutrition, and receive medical assistance through APIs. Whether you're aiming to maintain a balanced diet or access medical resources, Wellness Way Finder has you covered!  
 
+
+https://github.com/user-attachments/assets/91cf069d-bc59-4477-a0c1-34a13c4b41d2
+
+
+
 ## Features  
 - **BMI Calculator**: Calculate Body Mass Index (BMI) to assess your health status based on height and weight.  
 - **Chart Generation**: Dynamic and interactive charts to track fitness progress.  
